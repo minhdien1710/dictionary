@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word = prompt("Nhập từ bạn muốn tìm( ví dụ: handsome,...) ");
+    let eng = ["hello", "goodbye", "handsome"];
+    let vn = ["xin chào", "tạm biệt", "Nguyễn Minh Điển"];
+    let a = true;
+    for (i = 0; i < vn.length; i++) {
+        if (word === eng[i]) {
+            alert(eng[i] + " có nghĩa là " + vn[i]);
+            break;
+        } else {
+            a = false;
+        }
+    }
+    if(a==false)
+        alert("Hãy tìm từ khác");
+
+
+
+
+</script>
+
+</body>
+</html>
